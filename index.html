@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+<!--
+.tab { margin-left: 40px; }
+-->
+
+a:visited {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: green;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: Garamond;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 1000;
+    font-size: 300%;
+    line-height: 5vh;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    font-family: Garamond;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 5vh;
+    font-size: 200%
+}
+
+div.relative {
+    position: relative;
+    clear:both; 
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+.imleft{
+        float: left;
+}
+
+.imright{
+        float: right;
+}
+
+div.wavehead {
+    /* The image used */
+	background-image: url(IMG_4557b.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: #D5D8DC;
+    border: 1px solid;
+    opacity: 1;
+    width: 100vw;
+    height: 30vh;
+    background-size: contain;
+}
+
+div.box {
+  margin: 50px;
+  background-color: #ffffff;
+  border: 2px solid black;
+  text-align: center;
+    background-color: #D5D8DC;
+    padding: 1%;
+    margin: 3%;
+    height: 315px;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 2px solid black;
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+  font-size: 44;
+   opacity: 1;
+}
+
+
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 95%;
+}
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-image: url(IMG_4557b.jpg);
+    background-repeat: repeat;
+    background-position: center center;
+    background-color: #D5D8DC;
+    border: 3px solid;
+    opacity: 1;
+    /*width: 100vw;*/
+    height: auto;
+    background-size: cover;
+     float: center;
+    padding: 5px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color :#323250;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+    background-color: #323250;
+}
+.aside {
+    background-color: #323250;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #323250;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+#block_container {
+    text-align: center;
+
+}
+#block_container > div {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 5vw;
+    padding-left: 5vw;
+
+}
+/******************************************************************************
+
+</style>
+</head>
+
+<body style="background-color:white";">
+<div class="header">
+    <h1>Josh Humberston</h1>
+    <h2>
+    Ph.D. Student, Oceanography<br>
+    University of New Hampshire <br> 
+    Durham, NH <br>
+    (last updated: June 5, 2018)
+    </h2>
+</div>
+        <hr size="2" COLOR="gray" noshade>
+
+<div class="row">
+    <div class="col-2 col-s-3 menu">
+      <ul>
+        <img style="margin-bottom: 7px;" src="JH_MountainHostel_HeadShot.jpg" alt="Josh Humberston"/>
+        <li><a href=".." target="_self">Home</a></li>
+        <li><a href="../blog" target="_self">My Blog</a></li>
+        <li>Past Projects (coming soon)</li>
+        <li>Resources (coming soon)</li>
+        <li>Other (coming soon)</li>
+      </ul>
+    </div>
+
+
+    <div style="background-color:rgb(220,220,230);" class="col-9 col-s-12 menu">
+        <h1>Current Projects</h1>
+        <a HREF="#dataviz">Data Visualization</a>&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;<a HREF="#inmorph">Inlet Morphodynamics</a>
+
+        <a NAME="dataviz"></a>
+        <h2>1)Data Visualization</h2>
+            <img style="display: block; margin: auto;" height="200" src="SWE.jpg" alt="Josh Humberston"/>
+
+            <p style=" text-align: left;"><font size="4">If you are anything like me, these equations may not mean a whole lot to you, even if you do understand the math.<br><br> While some people have incredible mathmetical intuition and literally think in the language of math, <em>I do not</em>. I am a visual learner and so I turn complex data and equations into something that makes better sense to my way of thinking. For example, I have discretized the shallow water equations (SWE - shown above) so that they can be applied over a span of time and space as a model. The video below is an example simulation of this simple model where a few different wave components are created at one border and then propegate over a sloping bottom, all according to the SWE. Now <em>this</em> makes sense to me. </font></p>
+
+            <iframe style="display: block; margin: auto;" width="560" height="315" marginwidth="23px" src="https://www.youtube.com/embed/Hf875WCVV8Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p>Go ahead, go full screen and turn the quality up to its highest (1080p) through the gear icon. The arrows show the relative magnitude and direction of the depth integrated water velocity. It is neat to note how water first moves backwards and then forwards as a wave propegates by. Have you ever felt this while being in the water at a beach?<br><br><br><br> </p>
+
+            <a NAME="inmorph"></a>
+            <h2>2)Inlet Morphodynamics</h2>
+            <p style=" text-align: left;"><font size="4"> You may be thinking, ‘what the heck is Inlet Morphodynamics?’<br>
+            Well Wikipedia has an answer for you, but the shorter answer is the simple breakdown of the words:<br>
+            a. morpho – meaning form or shape<br>
+            b. dynamic – meaning change, particularly active change<br><br>
+            So morphodynamics simply refers to the active change in the shape of something, and in this case, the coast.
+
+            I specifically study how the shape of the bottom changes around tidal inlets.</font></p>        
+            <img style="display: block; margin: auto;" height="400" src="4271_OIscaledI.jpg" alt="Josh Humberston"/>
+
+
+
+    </div>      
+
+    <div>
+        <p><font size="7"><br><br><br><br><br><br><br><br></font></p>
+    </div>
+</div>
+
+<div class="footer">
+  <p>Created by: Josh Humberston &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=".." target="_self">HOME</a></p>
+</div>
+
+</body>
+</html>

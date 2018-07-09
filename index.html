@@ -219,7 +219,7 @@ html {
     Ph.D. Student, Oceanography<br>
     University of New Hampshire <br> 
     Durham, NH <br>
-    (last updated: June 5, 2018)
+    (last updated: July 9, 2018)
     </h2>
 </div>
         <hr size="2" COLOR="gray" noshade>
@@ -231,15 +231,27 @@ html {
         <li><a href=".." target="_self">Home</a></li>
         <li><a href="../blog" target="_self">My Blog</a></li>
         <li>Past Projects (coming soon)</li>
-        <li>Resources (coming soon)</li>
+        <li><a href="../ResearchInterests" target="_self">Research Interests </li>
         <li>Other (coming soon)</li>
       </ul>
     </div>
 
 
     <div style="background-color:rgb(220,220,230);" class="col-9 col-s-12 menu">
-        <h1>Current Projects</h1>
-        <a HREF="#dataviz">Data Visualization</a>&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;<a HREF="#inmorph">Inlet Morphodynamics</a>
+        <h1>Resources</h1>
+        <a HREF="#topobathy">Topo-bathy matlab colormap</a>&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;<a HREF="#dataviz">Simple Shallow Water Equation Model and Visualization</a>
+
+        <a NAME="topobathy"></a>
+            <h2>2)A simply colormap for plotting topo-bathymetric data in matlab</h2>
+            <p style=" text-align: left;"><font size="4"> There are a lot of nice built in and readily available colormaps for Matlab (I personally love what the creators of <a href="https://www.mathworks.com/matlabcentral/fileexchange/57773-cmocean-perceptually-uniform-colormaps">CMOCAEN</a> have done), but as someone who continuously continuously plots coastal elevation data, I found myself desiring a simple and flexible way to differentiate the colormap associated with elevations above the water surface from those below, particularly as the water level varied.’<br>
+
+            There were a few options available online, but none were quite meeting my needs perfectly, so I developed my own using some of the existing ones as a starting block. Also, when not TOO burdensome, I actually like to 'recreate the wheel' when it comes to coding. It is nice to know exactly what is happening and have full control over the results. Here is an example of the colormap used in a p-color plot as well as a 3D surface plot. </font></p>
+           
+            <img style="display: block; margin: auto;" height="400" src="cm_split_example.png" alt="cm_split_example"/>
+
+            <p style=" text-align: left;"><font size="4"> The colormap can be applied as a function which I call 'cm_split' and the code and a script to recreate the example shown above is included here. Instructions included within the function and example should (hopfully) be self explanatory.
+
+
 
         <a NAME="dataviz"></a>
         <h2>1)Data Visualization</h2>
@@ -250,16 +262,7 @@ html {
             <iframe style="display: block; margin: auto;" width="560" height="315" marginwidth="23px" src="https://www.youtube.com/embed/Hf875WCVV8Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <p>Go ahead, go full screen and turn the quality up to its highest (1080p) through the gear icon. The arrows show the relative magnitude and direction of the depth integrated water velocity. It is neat to note how water first moves backwards and then forwards as a wave propegates by. Have you ever felt this while being in the water at a beach?<br><br><br><br> </p>
 
-            <a NAME="inmorph"></a>
-            <h2>2)Inlet Morphodynamics</h2>
-            <p style=" text-align: left;"><font size="4"> You may be thinking, ‘what the heck is Inlet Morphodynamics?’<br>
-            Well Wikipedia has an answer for you, but the shorter answer is the simple breakdown of the words:<br>
-            a. morpho – meaning form or shape<br>
-            b. dynamic – meaning change, particularly active change<br><br>
-            So morphodynamics simply refers to the active change in the shape of something, and in this case, the coast.
-
-            I specifically study how the shape of the bottom changes around tidal inlets.</font></p>        
-            <img style="display: block; margin: auto;" height="400" src="4271_OIscaledI.jpg" alt="Josh Humberston"/>
+            
 
 
 
